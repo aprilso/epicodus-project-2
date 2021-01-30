@@ -8,63 +8,76 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
-  <h2>Programming Languages Quiz</h2>
-  <p>We'll ask you a series of questions to determine what language you should learn. This is a very serious and scientific test.</p>
+  <div class="container">
+    <h2>Programming Languages Quiz</h2>
+    <p>We'll ask you a series of questions to determine what language you should learn. This is a very serious and scientific test.</p>
 
-  <h4>Let's start. What is your name?</h4>
-  
-  <p>What a nice name.</p>
 
-  <h4>1. What is your favorite household pet?</h4>
-    <select class="form-control" id="pet">
-      <option>Dogs</option>
-      <option>Cats</option>
-      <option>Birds</option>
-      <option>Rabbits</option>
-      <option>Reptiles</option>
-      <option>Fish</option>
-    </select>
+    <h4>Let's start. What is your name?</h4>
+    
+    <p>What a nice name.</p> <!----add this after they press submit?-->
 
-  <h4>2. Do you like semi-colons?</h4>
-  <div class="radio">
-    <label>
-      <input type="radio" name="semicolon" value="yes">
-      Yes!
-    </label>
+    <form id ="quiz">
+      <h4>1. What is your favorite household pet?</h4>
+        <select class="form-control" id="pet">
+          <option>Dogs</option>
+          <option>Cats</option>
+          <option>Birds</option>
+          <option>Rabbits</option>
+          <option>Reptiles</option>
+          <option>Fish</option>
+        </select>
+
+      <h4>2. Do you like semi-colons?</h4>
+      <div class="radio">
+        <label>
+          <input type="radio" name="semicolon" value="yes">
+          Yes!
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="semicolon" value="neutral" checked>
+          Eh, no feelings either way.
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="semicolon" value="no">
+          No! I hate them!
+        </label>
+      </div>
+
+      <h4>3. Do you sing in the shower?</h4>
+      <p>It's ok, we won't tell.</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="sing" value="yes" checked>
+          Yes
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="sing" value="no">
+          No
+        </label>
+      </div>
+
+      <h4>4. Which color option do you like the best?</h4>
+      <!--Have 3 buttons that change the css colors-->
+
+      <h4>5. What </h4>
+
+      <button type="submit" class="btn">Submit!</button>
+    </form>
+    
+    <div class="result">
+      <h4>Your answers</h4>
+      <p>Based on your answers, you should study <span id="result"></span></p>
+    </div>
+      
   </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="semicolon" value="neutral" checked>
-      Eh, no feelings either way.
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="semicolon" value="no">
-      No! I hate them!
-    </label>
-  </div>
-
-  <h4>3. Do you sing in the shower?</h4>
-  <p>It's ok, we won't tell.</p>
-  <div class="radio">
-    <label>
-      <input type="radio" name="sing" value="yes" checked>
-      Yes
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="sing" value="no">
-      No
-    </label>
-  </div>
-
-  <h4>4. </h4>
-
-  <h4>5. </h4>
-
-  
+    
   
 </body>
 </html>
