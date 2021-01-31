@@ -10,8 +10,16 @@ body {
   border: 1px solid black;
 }
 
-.result {
+.answer {
   margin:10px;
   padding:10px;
   border:1px dotted white;
+}
+
+form {
+  margin-bottom:20px;
+}
+
+#python, #javascript, #C {
+  display: none;
 }

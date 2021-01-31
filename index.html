@@ -18,14 +18,11 @@
     <p>What a nice name.</p> <!----add this after they press submit?-->
 
     <form id ="quiz">
-      <h4>1. What is your favorite household pet?</h4>
+      <h4>1. Choose a household pet</h4>
         <select class="form-control" id="pet">
           <option>Dogs</option>
           <option>Cats</option>
-          <option>Birds</option>
-          <option>Rabbits</option>
           <option>Reptiles</option>
-          <option>Fish</option>
         </select>
 
       <h4>2. Do you like semi-colons?</h4>
@@ -63,20 +60,49 @@
         </label>
       </div>
 
-      <h4>4. Which color option do you like the best?</h4>
-      <!--Have 3 buttons that change the css colors-->
+      <h4>4. Do you like playing video games?</h4>
+      <div class="radio">
+        <label>
+          <input type="radio" name="games" value="yes">
+          Yes
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="games" value="no">
+          No
+        </label>
+      </div>
 
-      <h4>5. What </h4>
+      <h4>5. Choose a breakfast</h4>
+      <select class="form-control" id="breakfast">
+        <option>Cereal</option>
+        <option>Pancakes</option>
+        <option>Scrambled Eggs</option>
+      </select>
 
       <button type="submit" class="btn">Submit!</button>
     </form>
     
     <div class="result">
       <h4>Your answers</h4>
-      <p>Based on your answers, you should study <span id="result"></span></p>
-    </div>
+
+      <div id="python">
+        <h4>You should study Python.</h4>
+        <p>Python is clear and easy to read. It also doesn't use semi-colons. No actual reptiles are involved. </p>
+      </div>
+
+      <div id="javascript">
+        <h4>You should study Javascript.</h4>
+        <p>Javascript is used to add interactive elements in web pages and runs in the browser. It uses semi-colons, but they're kind of optional.</p>
+      </div>
       
-  </div>
+      <div id="Csharp">
+        <h4>You should study C#.</h4>
+        <p> If you like game development, C# is used for scripting in the game engine Unity. It is very picky about the proper use of semi-colons.</p>
+      </div>
+        
+    </div>
     
   
 </body>
