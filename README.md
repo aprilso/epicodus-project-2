@@ -3,7 +3,7 @@
 By April Soetarman
 
 ## Description of program
-This is a basic quiz to determine what programming languages you should study (this is not a real quiz). 
+This is a basic 5-question quiz to determine what programming language you should study. This quiz is for fun and should just be taken as a starting point. 
 
 ## Technologies used
 - HTML
