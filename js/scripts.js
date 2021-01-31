@@ -6,20 +6,21 @@ $(document).ready(function(){
     //print likingSemicolons;
     const pets = $("select#pet").val();
     const semicolons= $("input:radio[name=semicolon]:checked").val();
-    const sing = $("select#sing").val();
-    const games = $("select#games").val();
+    const sing = $("input:radio[name=sing]:checked").val();
+    const games = $("input:radio[name=games]:checked").val();
     const breakfast = $("select#breakfast").val();
 
 
-    // if (pets === "Reptiles"); {
-    //   $('#python').show()
-    //   console.log('printing python');
-    // }
-    
-    if (games === "yes"); {
-      $('Csharp').show()
-      console.log('showing C#');
+    if (semicolons === "no" || semicolons === "neutral")  {
+      $('#python').show();
+    } else if (games === "yes" && semicolons === "yes") {
+      $('#Csharp').show();
+    } else {
+      $('#javascript').show();
     }
+
+    // if (semicolons === 'neutral' && pets !== 'Reptiles') {
+    //   $('#javascript').show();
    
     //const beverage = $("#beverage").val();
 
@@ -35,10 +36,9 @@ $(document).ready(function(){
 
     // $("#result").text(answer);
 
-    if (semicolons === 'yes') {
-      $('#Csharp').show();
-      console.log("printing semicolon")
-    }
+ 
+
+    
 
   });
   console.log("testing");
