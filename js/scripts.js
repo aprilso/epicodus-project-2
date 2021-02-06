@@ -11,13 +11,17 @@ $(document).ready(function(){
 
 
     if (semicolons === "no")  {
+      $('#Csharp').hide();
+      $('#javascript').hide();  
       $('#python').show();
     } else if (games === "yes" && semicolons === "yes") {
+      $('#javascript').hide();  
+      $('#python').hide();
       $('#Csharp').show();
     } else {
+      $('#Csharp').hide();
+      $('#python').hide();
       $('#javascript').show();
     }
-
-
   });
 });
